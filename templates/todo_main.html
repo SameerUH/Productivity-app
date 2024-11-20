@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    }
+
+    h1 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    h2 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: white;
+    }
+
+    .table th {
+    background-color: #809FFF;
+    }
+
+    button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    }
+
+
+    .button2 {
+    width: 120px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 20px;
+    }
+
+    .button3 {
+    position:absolute;
+    right: 250px;
+    display: inline-block;
+    }
+
+    .dropup {
+    position: absolute;
+    left: 250px;
+    display: inline-block;
+    }
+
+
+    .dropup-content {
+    display: none;
+    position:absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+
+    .dropup-content a {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    display: block;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    }
+
+    .dropup:hover .dropup-content {
+    display: block;
+    }
+
+
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list main page</title>
+</head>
+<body>
+
+
+<h1>TO-DO</h1>
+<h2>General</h2>
+
+<table class="table">
+
+    <tr>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Priority</th>
+        <th>Type</th>
+        <th>Completed</th>
+    </tr>
+    <form action = "#" method = "post">
+        <tr>
+            <td>{{general_task1}}</td>
+            <td>{{general_description1}}</td>
+            <td>{{general_start_date1}}</td>
+            <td>{{general_end_date1}}</td>
+            <td>{{general_priority1}}</td>
+            <td>{{general_type1}}</td>
+            <td><button type = "submit" name = "complete" value = "{{general_task1}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{general_task2}}</td>
+            <td>{{general_description2}}</td>
+            <td>{{general_start_date2}}</td>
+            <td>{{general_end_date2}}</td>
+            <td>{{general_priority2}}</td>
+            <td>{{general_type2}}</td>
+            <td><button type = "submit" name = "complete" value = "{{general_task2}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{general_task3}}</td>
+            <td>{{general_description3}}</td>
+            <td>{{general_start_date3}}</td>
+            <td>{{general_end_date3}}</td>
+            <td>{{general_priority3}}</td>
+            <td>{{general_type3}}</td>
+            <td><button type = "submit" name = "complete" value = "{{general_task3}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{general_task4}}</td>
+            <td>{{general_description4}}</td>
+            <td>{{general_start_date4}}</td>
+            <td>{{general_end_date4}}</td>
+            <td>{{general_priority4}}</td>
+            <td>{{general_type4}}</td>
+            <td><button type = "submit" name = "complete" value = "{{general_task4}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{general_task5}}</td>
+            <td>{{general_description5}}</td>
+            <td>{{general_start_date5}}</td>
+            <td>{{general_end_date5}}</td>
+            <td>{{general_priority5}}</td>
+            <td>{{general_type5}}</td>
+            <td><button type = "submit" name = "complete" value = "{{general_task5}}" class = "button button2">Completed</button></td>
+        </tr>
+    </form>
+</table>
+
+
+<br><br><br>
+
+<h2>Work</h2>
+<table class="table">
+
+    <tr>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Priority</th>
+        <th>Type</th>
+        <th>Completed</th>
+    </tr>
+    <form action = "#" method = "post">
+        <tr>
+            <td>{{work_task1}}</td>
+            <td>{{work_description1}}</td>
+            <td>{{work_start_date1}}</td>
+            <td>{{work_end_date1}}</td>
+            <td>{{work_priority1}}</td>
+            <td>{{work_type1}}</td>
+            <td><button type = "submit" name = "complete" value = "{{work_task1}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{work_task2}}</td>
+            <td>{{work_description2}}</td>
+            <td>{{work_start_date2}}</td>
+            <td>{{work_end_date2}}</td>
+            <td>{{work_priority2}}</td>
+            <td>{{work_type2}}</td>
+            <td><button type = "submit" name = "complete" value = "{{work_task2}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{work_task3}}</td>
+            <td>{{work_description3}}</td>
+            <td>{{work_start_date3}}</td>
+            <td>{{work_end_date3}}</td>
+            <td>{{work_priority3}}</td>
+            <td>{{work_type3}}</td>
+            <td><button type = "submit" name = "complete" value = "{{work_task3}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{work_task4}}</td>
+            <td>{{work_description4}}</td>
+            <td>{{work_start_date4}}</td>
+            <td>{{work_end_date4}}</td>
+            <td>{{work_priority4}}</td>
+            <td>{{work_type4}}</td>
+            <td><button type = "submit" name = "complete" value = "{{work_task4}}" class = "button button2">Completed</button></td>
+        </tr>
+        <tr>
+            <td>{{work_task5}}</td>
+            <td>{{work_description5}}</td>
+            <td>{{work_start_date5}}</td>
+            <td>{{work_end_date5}}</td>
+            <td>{{work_priority5}}</td>
+            <td>{{work_type5}}</td>
+            <td><button type = "submit" name = "complete" value = "{{work_task5}}" class = "button button2">Completed</button></td>
+        </tr>
+    </form>
+</table>
+<br><br><br>
+
+<div class = "dropup">
+        <button>Dropup</button>
+        <div class = "dropup-content">
+            <a href = "/todo_main">To-Do</a>
+            <br>
+            <a href = "/main_home_page">Calendar</a>
+            <br>
+            <a href = "/notes_main">Notes</a>
+            <br>
+            <a href = "/settings_main">Settings</a>
+            <br>
+        </div>
+</div>
+<form>
+    <button class = "button button3" formaction = "/todo_create">Create a Task</button>
+</form>
+</body>
+</html>

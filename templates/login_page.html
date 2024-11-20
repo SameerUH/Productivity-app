@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    }
+
+  h1 {
+    border-radius: 25px;
+    background: #808080;
+    padding: 20px;
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 12px 16px 0 #8B0000, 0 17px 50px 0 #8B0000;
+    margin-top: 100px;
+    }
+
+
+  button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 #00008B, 0 17px 50px 0 #00008B;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    input {
+        width: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        transition: width 0.4s ease-in-out;
+        text-overflow: ellipsis;
+    }
+
+    input:hover {
+        width: 500px;
+        cursor: pointer;
+    }
+
+    input:focus {
+        width: 500px;
+    }
+
+    label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: #2196F3;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 #00008B, 0 17px 50px 0 #00008B;
+    }
+
+    button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.15s linear;
+    }
+
+    button:hover {
+      box-shadow: 0 12px 16px 0 #00008B, 0 17px 50px 0 #00008B;
+      width: 250px;
+      cursor: pointer;
+    }
+
+    input [type=text]{
+    font-size: 10px;
+    }
+
+    p {
+    font-size: 20px
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<h1>Log In:</h1>
+
+<p><strong>{{error}}</strong></p>
+
+    <form action="#" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>

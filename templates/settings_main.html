@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    body {
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+    }
+
+
+    h1 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    h2 {
+    font-size: 40px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .table {
+    border: 1px solid;
+    width: 50%;
+    }
+
+    .table, th, td {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #809FFF;
+    }
+
+    button {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    width: 120px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 20px;
+    }
+
+    .button2 {
+    height: 100px;
+    width: 300px;
+    font-size: 24px;
+    }
+
+    .dropup {
+    position: absolute;
+    display: inline-block;
+    right: 525px;
+    }
+
+
+    .dropup-content {
+    display: none;
+    position:absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+
+    .dropup-content a {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    display: block;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    }
+
+    .dropup:hover .dropup-content {
+    display: block;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>SETTINGS</h1>
+    <table class = "table">
+        <form action = "#" method = "post">
+            <tr>
+                <td><h2>Notifications</h2></td>
+                <td><button name = "button" value = "notifications">Open</button></td>
+            </tr>
+            <tr>
+                <td><h2>Change Password</h2></td>
+                <td><button name = "button" value = "change_password">Open</button></td>
+            </tr>
+        </form>
+    </table>
+    <div class = "dropup">
+        <button class = "button button2">Dropup</button>
+        <div class = "dropup-content">
+            <a href = "/todo_main">To-Do</a>
+            <br>
+            <a href = "/main_home_page">Calendar</a>
+            <br>
+            <a href = "/notes_main">Notes</a>
+            <br>
+            <a href = "/settings_main">Settings</a>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

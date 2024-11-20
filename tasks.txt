@@ -1,0 +1,5 @@
+username,task,description,startdate,enddate,priority,type
+sameerhaq123,Geography homework,Do Geography homework.,12/04/2024,21/05/2024,High,Work
+Bloodhound54,Revise for sociology test,Make mind maps and flashcards of content,05/01/2024.06/02/2024,Low,Work
+sameerhaq123,Clean Room, Hoover floor and clean desk and sort wardrobe,12/04/2024,21/05/2024,High,General
+sameerhaq123,This tests the task create page,This should work and create a task,01/01/2024,05/01/2024,Medium,Work

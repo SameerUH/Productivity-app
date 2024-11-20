@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+    }
+
+
+    h1 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .table {
+    border: 1px solid;
+    width: 100%;
+    }
+
+    .table, th, td {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: white;
+    }
+
+    .table th {
+    background-color: #809FFF;
+    }
+
+    button {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    width: 120px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 20px;
+    }
+
+    .dropup {
+    position: absolute;
+    display: inline-block;
+    }
+
+
+    .dropup-content {
+    display: none;
+    position:absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+
+    .dropup-content a {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    display: block;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    }
+
+    .dropup:hover .dropup-content {
+    display: block;
+    }
+
+    .button2 {
+    width: 300px;
+    left: 10px;
+    height: 100px;
+    }
+</style>
+
+<head>
+    <h1>NOTES</h1>
+</head>
+<body>
+    <table class = "table">
+        <form action = "#" method = "post">
+            <tr>
+                <td>{{note1}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note1}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note1}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note2}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note2}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note2}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note3}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note3}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note3}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note4}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note4}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note4}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note5}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note5}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note5}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note6}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note6}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note6}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note7}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note7}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note7}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note8}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note8}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note8}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note9}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note9}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note9}}">Delete</button></td>
+            </tr>
+            <tr>
+                <td>{{note10}}</td>
+                <td><button type = "submit" class = "button" name = "button" value ="{{note10}}">Open</button></td>
+                <td><button type = "submit" class = "button" name = "button" value ="delete_{{note10}}">Delete</button></td>
+            </tr>
+        </form>
+    </table>
+<div class = "dropup">
+        <button class = "button button2">Dropup</button>
+        <div class = "dropup-content">
+            <a href = "/todo_main">To-Do</a>
+            <br>
+            <a href = "/main_home_page">Calendar</a>
+            <br>
+            <a href = "/notes_main">Notes</a>
+            <br>
+            <a href = "/settings_main">Settings</a>
+            <br>
+        </div>
+</div>
+</body>
+</html>

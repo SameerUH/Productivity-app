@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    body {
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+    }
+
+    h1 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    h2 {
+    font-size: 40px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .table {
+    border: 1px solid;
+    width: 50%;
+    }
+
+    .table, th, td {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #809FFF;
+    }
+
+    button {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    }
+
+    select {
+    padding: 20px 20px;
+    font-size: 30px;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>NOTIFICATIONS SETTINGS</h1>
+
+    <table class = "table">
+        <form action="#" method="post">
+            <tr>
+                <td><h2>Reminder #1</h2></td>
+                <td><select name = "reminder_1">
+                    <option value = "on">On</option>
+                    <option value = "off">Off</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><h2>Reminder #2</h2></td>
+                <td><select name = "reminder_2">
+                    <option value = "on">On</option>
+                    <option value = "off">Off</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><h2>Daily notifications</h2></td>
+                <td><select name = "daily">
+                    <option value = "on">On</option>
+                    <option value = "off">Off</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><button type = "submit" name = "button" value = "make_changes">Make Changes</button></td>
+                <td><button type = "submit" name = "button" value = "go_back">Go Back</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

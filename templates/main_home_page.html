@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+    body {
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+    }
+
+    .task_counter {
+        height: 150px;
+        width: 400px;
+        background-color: black;
+        margin: auto;
+    }
+
+    .task_counter .circle {
+        height: 100px;
+        width: 100px;
+        background-color: brown;
+        border-radius: 50%;
+        margin: auto;
+        transform: translate(0, 25%);
+    }
+
+    .task_counter .circle p {
+        font-size: 50px;
+        vertical-align: middle;
+        transform: translate(0, 25%);
+    }
+
+    h1 {
+    font-size: 50px;
+    border-radius: 255px;
+    padding: 20px;
+    background: #808080;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .calendar, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: white;
+    }
+
+    .calendar th {
+    background-color: #809FFF;
+    }
+
+    button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    }
+
+    .button2 {
+    width: 120px;
+    height: 30px;
+    padding: 0px 0px;
+    font-size: 20px;
+    }
+
+    .dropup {
+    position: relative;
+    display: inline-block;
+    }
+
+
+    .dropup-content {
+    display: none;
+    position:absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+
+    .dropup-content a {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    background-color: #04AA6D;
+    height: 100px;
+    width: 300px;
+    display: block;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    }
+
+    .dropup:hover .dropup-content {
+    display: block;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+
+    <h1>Weekly Tasks</h1>
+    <div class = "task_counter">
+        <div class = "circle">
+            <p>{{tasks}}</p>
+        </div>
+    </div>
+    <h1>Calendar</h1>
+
+
+
+</head>
+<body>
+<table class="calendar">
+        <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Priority</th>
+            <th>Completed</th>
+        </tr>
+        <form action = "#" method = "post">
+            <tr>
+                <td>{{name1}}</td>
+                <td>{{date1}}</td>
+                <td>{{priority1}}</td>
+                <td><button type = "submit" name = "complete" value = "{{name1}}" class = "button button2">Completed</button></td>
+            </tr>
+            <tr>
+                <td>{{name2}}</td>
+                <td>{{date2}}</td>
+                <td>{{priority2}}</td>
+                <td><button type="submit" name = "complete"  value = "{{name2}}" class = "button button2">Completed</button></td>
+            </tr>
+            <tr>
+                <td>{{name3}}</td>
+                <td>{{date3}}</td>
+                <td>{{priority3}}</td>
+                <td><button type="submit" name = "complete"  value = "{{name3}}" class = "button button2">Completed</button></td>
+            </tr>
+        </form>
+</table>
+
+<br><br>
+
+    <div class = "dropup">
+        <button>Dropup</button>
+        <div class = "dropup-content">
+            <a href = "/todo_main">To-Do</a>
+            <br>
+            <a href = "/main_home_page">Calendar</a>
+            <br>
+            <a href = "/notes_main">Notes</a>
+            <br>
+            <a href = "/settings_main">Settings</a>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
